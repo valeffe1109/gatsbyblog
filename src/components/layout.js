@@ -1,4 +1,6 @@
 import React from "react"
+import Footer from './footer'
+import Navbar from './navbar';
 import { Link } from "gatsby"
 
 const Layout = ({ location, title, children }) => {
@@ -8,28 +10,42 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+      <section className="hero is-medium  is-dark is-bold">
+      <div className="hero-body">
+        <div className="container">
+          <h1 className="title has-text-centered">
+            Benvenuto nel blog di DevLife
+          </h1>
+          <h2 className="subtitle has-text-centered">
+           Condivido con il mio pubblico la passione per l'informatica e la tecnologia 
+          </h2>
+        </div>
+      </div>
+    </section>
     )
   } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
+   
   }
 
+
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <>
+    <Navbar/>
+    <div data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
+      <div className="global-wrapper">
+      <div className="columns is-centered is-desktop">
+        <div className="column is-12">
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      </div>
+      <div className="column is-6">
+      </div>
+      </div>
+      
     </div>
+    </div>
+    <Footer/>
+    </>
   )
 }
 

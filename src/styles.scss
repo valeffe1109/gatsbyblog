@@ -1,4 +1,14 @@
-/* CSS Custom Properties Definitions */
+@import "~bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet');
+
+
+
+$darkPink: #ff2255;
+$grey:#444444;
+$white: #eeeedd;
+$green: #ccddcc;
+$blue:#559999;
+
 
 :root {
   --maxWidth-none: "none";
@@ -54,7 +64,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-primary: #FF2255;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -75,12 +85,15 @@ html {
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  font-family: 'Roboto Mono', monospace;
+
 }
 
 footer {
@@ -270,7 +283,7 @@ a:focus {
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
-  color: var(--color-primary);
+  color: black;
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
 }
@@ -302,6 +315,17 @@ a:focus {
   border-radius: 100%;
 }
 
+.nav-logo{
+  min-width:50px;
+  margin-right:var(--spacing-4);
+}
+
+.navbar-item:hover{
+  text-decoration:underline;
+  color:$darkPink!important;
+  
+}
+
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
@@ -330,4 +354,86 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+.footer {
+  background-color: $grey !important;
+  a {
+    color: white;
+  }
+  .logo-col {
+    padding-left: 3rem;
+    @media (max-width: 768px) {
+      padding-left: 0rem;
+    }
+  }
+  .footer-hr {
+    margin-top: 8rem;
+  }
+}
+
+.inner_footer {
+  margin-right: 0;
+  float: left;
+  height: 100%;
+  margin-right: 10px;
+  a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  a:hover {
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    float: none;
+  }
+}
+
+.link {
+  font-size: 28px;
+  a {
+    color: $darkPink;
+  }
+}
+
+.navbar-burger{
+  margin-left:auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-right:1.5rem;
+  background-color:white!important;
+  span{
+    color:$darkPink;
+    height:3px;
+    
+  }
+}
+.is-dark{
+  color:white;
+  background-image:url('../content/assets/bg-2.jpg')!important;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.green-section {
+  background-color: #CCDDCC;
+  padding-top:5rem;
+  padding-bottom: 5rem;
+  @media(max-width:768px){
+    padding:15px;
+  }
+}
+
+.navbar{
+  a:hover{
+    background-color:white;
+  }
+}
+
+.send-button{
+  color:white;
+  background-color:$darkPink;
 }
