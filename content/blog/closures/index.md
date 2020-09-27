@@ -1,5 +1,5 @@
 ---
-title: JavaScript Pills 1 Closures
+title: JavaScript Pill 1 Closures
 date: "2020-09-27"
 ---
 Cosa è una closure ?
