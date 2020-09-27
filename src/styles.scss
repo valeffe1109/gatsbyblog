@@ -413,10 +413,9 @@ a:focus {
 
 .navbar-menu {
   @media (max-width: 768px) {
-   opacity:0;
+    opacity:0;
     position:absolute;
     width:100%;
-
 
    
   }
@@ -427,7 +426,11 @@ a:focus {
     justify-content: center;
   }
 }
+.is-active{
+  opacity:1;
+  max-height:100%;
 
+}
 
 
 
