@@ -101,7 +101,9 @@ const Layout = ({ location, title, children }) => {
             <a class="navbar-item" href="/">
               Home
             </a>
-           
+            <a class="navbar-item" href="/contattami">
+              Contattami
+            </a>
            
           </div>
         </div>
@@ -135,7 +137,6 @@ const Layout = ({ location, title, children }) => {
       <div className="column is-6">
       </div>
       </div>
-      
     </div>
     </div>
     <Footer/>
