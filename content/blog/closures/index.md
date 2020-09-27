@@ -11,9 +11,9 @@ Cosa è lo scope ?
 
 Lo scope è la parte del nostro programma dove le nostre variabili ed i nostri metodi saranno visibili ed utilizzabili. 
 
-L'utilizzo delle closures è importante perché controllano cosa è e cosa non è presente all'interno dello scope della nostra funzione 
+L'utilizzo delle closures è importante perché controllano cosa è e cosa non è presente all'interno dello scope della nostra funzione.
 
-Le closures sono spesso usate in JavaScript per gestire la privacy di determinati oggetti  e sono utilizzate in diversi design patterns .
+Le closures sono spesso usate in JavaScript per gestire la privacy di determinati oggetti  e sono utilizzate in diversi design patterns.
 
 Andiamo a vedere un semplicissimo esempio (Fonte MDN)
 ```javascript
