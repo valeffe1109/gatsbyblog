@@ -1,6 +1,5 @@
 import React from "react";
 import axios from 'axios';
-import Navbar from "../components/navbar";
 import Footer from '../components/footer';
 const ContattiBody = () => {
    
@@ -24,9 +23,8 @@ const ContattiBody = () => {
     }
   return (
     <>
-    <Navbar/>
-      <div className="green-section">
-       <h1 className="subtitle has-text-centered">Contattami</h1>
+      <div className="lightgrey-section">
+       <h1 className="has-text-centered">Contattami</h1>
       <form onSubmit={handleSubmit}>
         <div className="container">
           <div className="columns is-centered is-desktop is-vcentered">
