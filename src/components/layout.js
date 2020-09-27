@@ -52,8 +52,10 @@ const Layout = ({ location, title, children }) => {
           <div class="navbar-end">
             <a class="navbar-item" href="/">
               Home
+            </a> 
+            <a class="navbar-item" href="/contattami">
+              Contattami
             </a>
-          
           </div>
         </div>
       </div>

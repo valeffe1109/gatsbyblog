@@ -413,24 +413,22 @@ a:focus {
 
 .navbar-menu {
   @media (max-width: 768px) {
-    opacity: 0;
-    transition: all 0.2s ease-out;
-    display:block;
-    z-index:100;
+   opacity:0;
+    position:absolute;
+    width:100%;
+
+
+   
+  }
+}
+.navbar-item{
+  @media(max-width:768px){
+    display:flex;
+    justify-content: center;
   }
 }
 
 
-.navbar-item {
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: center; 
-  }
-}
-.is-active{
-  opacity:1;
-  transition: all 2s ease-out;
-}
 
 
 .number{
