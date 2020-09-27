@@ -1,8 +1,10 @@
 import React from "react";
 import axios from 'axios';
 import Footer from '../components/footer';
+import NavHero from '../components/navhero';
+import {Helmet } from 'react-helmet'
+
 const ContattiBody = () => {
-   
     const handleSubmit = (event) => {
       event.preventDefault()
       const {name,email,questions} = event.target.elements;
@@ -23,6 +25,12 @@ const ContattiBody = () => {
     }
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contattaci</title>
+        <link rel="canonical" href="/" />
+      </Helmet>
+       <NavHero/>
       <div className="lightgrey-section">
        <h1 className="has-text-centered">Contattami</h1>
       <form onSubmit={handleSubmit}>

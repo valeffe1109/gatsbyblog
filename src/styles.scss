@@ -410,27 +410,13 @@ a:focus {
 }
 
 //navbar
-
-.navbar-menu {
-  @media (max-width: 768px) {
-    opacity:0;
-    position:absolute;
-    width:100%;
-
-   
-  }
-}
 .navbar-item{
   @media(max-width:768px){
     display:flex;
     justify-content: center;
   }
 }
-.is-active{
-  opacity:1;
-  max-height:100%;
 
-}
 
 
 
