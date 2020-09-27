@@ -413,11 +413,10 @@ a:focus {
 
 .navbar-menu {
   @media (max-width: 768px) {
-    display: flex;
-    justify-content: center;
     opacity: 0;
-    transition: all 1s ease-in;
-  
+    transition: all 0.2s ease-out;
+    display:block;
+    z-index:100;
   }
 }
 
@@ -425,13 +424,12 @@ a:focus {
 .navbar-item {
   @media (max-width: 768px) {
     display: flex;
-    justify-content: center;
-  
-  
+    justify-content: center; 
   }
 }
 .is-active{
   opacity:1;
+  transition: all 2s ease-out;
 }
 
 
