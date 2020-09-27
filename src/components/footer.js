@@ -39,13 +39,13 @@ const Footer = () => {
                 Social
               </h4>
               <a>Instagram @devlifeit</a>
+              <a href="https://www.linkedin.com/in/valerio-fusco-091078187/">LinkedIn</a>
             </div>
           </div>
           <div className="column ">
             <div className="inner_footer">
               <h4 style={{ color: "#FF2255", fontWeight: "bold" }}>DevLife</h4>
               <a href="/">Home</a>
-              <a href="/contattami">Contattami</a>
             </div>
           </div>
          

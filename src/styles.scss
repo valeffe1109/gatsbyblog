@@ -411,11 +411,27 @@ a:focus {
 
 //navbar
 
+.navbar-menu {
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s ease-in;
+  
+  }
+}
+
+
 .navbar-item {
   @media (max-width: 768px) {
     display: flex;
     justify-content: center;
+  
+  
   }
+}
+.is-active{
+  opacity:1;
 }
 
 
